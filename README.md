@@ -387,7 +387,7 @@ init = tf.global_variables_initializer()
 sess.run(init)
 
 #saver.restore(sess,tf.train.latest_checkpoint('GAN/discriminator/'))
-saver.restore(sess,tf.train.latest_checkpoint('discriminator/'))
+saver.restore(sess,tf.train.latest_checkpoint('discriminator_no_GAN/'))
 
 coord = tf.train.Coordinator()
 threads = tf.train.start_queue_runners(coord=coord)
